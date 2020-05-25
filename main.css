@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background-color: #0f0f0f;
+}
+
+body {
+  font-family: "zilla slab";
+  color: white;
+}
+
+h1 {
+  padding-right: 1.2rem;
+}
+
+i,
+svg {
+  pointer-events: none;
+}
+
+.kick-pad,
+.snare-pad,
+.hihat-pad {
+  width: 5rem;
+  margin: 1rem 0.5rem;
+  height: 5rem;
+  cursor: pointer;
+  background: #0f0f0f;
+  -webkit-box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+          box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+}
+
+.kick-pad.active {
+  background: #4545ce;
+}
+
+.snare-pad.active {
+  background: #ffa743;
+}
+
+.hihat-pad.active {
+  background: #dd3ca7;
+}
+
+.sequencer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  min-height: 100vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.hihat-track,
+.snare-track,
+.kick-track {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  margin-top: 5rem;
+  width: 70%;
+}
+
+.hihat,
+.snare,
+.kick {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.controls {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  margin: 0rem 2rem;
+}
+
+.controls button {
+  padding: 1rem;
+  border: none;
+  background: #0f0f0f;
+  -webkit-box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+          box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.pad {
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+}
+
+.play {
+  padding: 1rem 2rem;
+  border: none;
+  background: #0f0f0f;
+  -webkit-box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+          box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+  color: white;
+  font-size: 1.5rem;
+  cursor: pointer;
+  -webkit-transition: all 0.5s ease;
+  transition: all 0.5s ease;
+  margin-top: 3rem;
+}
+
+select {
+  padding: 1rem;
+  font-size: 1rem;
+  margin-left: 1rem;
+  background: #0f0f0f;
+  -webkit-box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+          box-shadow: 4px 4px 10px #080808, -4px -4px 10px #161616;
+  color: white;
+  border: none;
+}
+
+.mute.active {
+  background-color: #8b4141;
+}
+
+.tempo {
+  margin: 3rem;
+  width: 30%;
+}
+
+.tempo p {
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 1rem;
+}
+
+.tempo-slider {
+  padding: 0.5rem;
+  -webkit-appearance: none;
+     -moz-appearance: none;
+          appearance: none;
+  margin: 1rem 0rem;
+  width: 100%;
+  position: relative;
+  background: #505050;
+  cursor: pointer;
+  border-radius: 1rem;
+}
+
+@-webkit-keyframes playTrack {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
+}
+
+@keyframes playTrack {
+  from {
+    scale: 1;
+  }
+  to {
+    scale: 1.2;
+  }
+}
+/*# sourceMappingURL=main.css.map */
